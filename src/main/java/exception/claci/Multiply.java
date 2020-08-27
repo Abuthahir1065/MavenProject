@@ -1,4 +1,4 @@
-package n.inputs;
+package exception.claci;
 import java.util.Scanner;
 public class Multiply extends Calculator {
 	void getResult()
@@ -7,9 +7,11 @@ public class Multiply extends Calculator {
 	    int result=1;
 		 int n;
 		 int i;
-		 int num[] = new int[100];
-	System.out.println("Enter the number of values you want to multiply: ");
-	n=sc.nextInt();
+		 System.out.println("Enter the number of values you want to multiply: ");
+			n=sc.nextInt();
+		 int num[] = new int[n];
+	try
+	{
 	System.out.println("Input "+n+" values");
 	for(i=0;i<n;i++)
 	{
@@ -23,6 +25,12 @@ public class Multiply extends Calculator {
 	System.out.println("Multiplication of all numbers is "+result);
 
 	System.out.println("================================");
+	}
+	catch(Exception e)
+	{
+		System.out.println("InputMismatchException Occured");
+		System.out.println(e);
+	}
     sc.close();
 }
 

@@ -1,4 +1,4 @@
-package n.inputs;
+package exception.claci;
 import java.util.Scanner;
 public class Subtract extends Calculator {
 	void getResult()
@@ -10,6 +10,8 @@ public class Subtract extends Calculator {
 		 int num[] = new int[100];
 	System.out.println("Enter the number of values you want to Subtract: ");
 	n=sc.nextInt();
+	try
+	{
 	System.out.println("Input "+n+" values");
 	for(i=0;i<n;i++)
 	{
@@ -23,7 +25,14 @@ public class Subtract extends Calculator {
 	System.out.println("Subtraction of all numbers is "+result);
 
 	System.out.println("================================");
-    sc.close();
+	}
+	catch(Exception e)
+	{
+		System.out.println("InputMismatchException Occured");
+		System.out.println(e);
+	}
+	sc.close();
+
 }
 	
 }

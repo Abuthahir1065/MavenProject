@@ -40,7 +40,7 @@ public class Arithmetic_Operations {
 			
 		}
 		System.out.println("Result is "+result);
-
+       sc.close();
 	}
 
 }

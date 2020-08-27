@@ -55,6 +55,7 @@ public class Calculator {
 	System.out.println("================================");
 	System.out.println(num1+" "+operation+" "+num2+" "+"="+" "+result);
 	System.out.println("================================");
+	sc.close();
 }
 		
 		

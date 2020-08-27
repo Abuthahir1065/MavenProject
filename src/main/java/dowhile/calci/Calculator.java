@@ -106,6 +106,7 @@ public class Calculator {
 		
 	 }	
    }while(choice!=5);
+	sc.close();
  }
 		
 		}

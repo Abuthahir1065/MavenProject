@@ -1,4 +1,4 @@
-package n.inputs;
+package exception.claci;
 
 //Calculator program using N inputs
 
@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Calculator {
 	
-	public static void main(String[] args)
+	public static void main(String[] args) throws InvalidChoiceException
 	{
 	Scanner sc=new Scanner(System.in);
 	
@@ -53,15 +53,16 @@ public class Calculator {
 		break;
 		
 	case 6:
-		System.out.println("You have pressed 6. The program has ended..!!");
+		System.out.println("You have pressed 6 ! The program has been ended..!");
 		
 		break;
 	default:
-		System.out.println("Wrong Choice...!!");
+		
+		throw new InvalidChoiceException("Invalid Choice");
 		
 	 }	
    }while(choice!=6);
-	sc.close();
- }
+     sc.close();
+	}
 		
 }

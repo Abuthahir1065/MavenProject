@@ -1,4 +1,4 @@
-package n.inputs;
+package exception.claci;
 import java.util.Scanner;
 
 public class Evaluation {
