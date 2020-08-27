@@ -11,17 +11,15 @@ public class Division extends Calculator{
      System.out.println("How many numbers do you want to divide? ");
      n=sc.nextInt();
      double[] divisionArray = new double[n];
-try {
-     for(i = 0; i < n; i++) {
-         System.out.print("Enter " +n+" numbers: ");
+     System.out.print("Enter " +n+" numbers: ");
+     
+      for(i = 0; i < n; i++) {
+         
          divisionArray[i] = sc.nextDouble();
-         if(divisionArray[n]==0)
-         {
-        	 throw new ArithmeticException();
-         }
+       
      
      
-         sc.close();
+         
      }
     
      
@@ -29,19 +27,21 @@ try {
      double result = divisionArray[0];
      
      for(k = 1; k < n; k ++) {
-         result = result / divisionArray[k];
-        
+         
+         if(divisionArray[k]==0)
+         {
+         throw new ArithmeticException("By Zero");
+         }
+         else
+         {
+        	 result = result / divisionArray[k];
+         }
      
      }
      
      System.out.println("Division of all numbers is "+result);
      System.out.println("================================");
-}
-catch(Exception e)
-{
-	System.out.println("InputMismatchException Occured");
-	System.out.println(e);
-}
 
+    
 }
 }

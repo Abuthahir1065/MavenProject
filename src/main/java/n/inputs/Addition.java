@@ -16,7 +16,7 @@ public class Addition extends Calculator  {
 	{
 		num[i]=sc.nextInt();
 	}
-	 
+	
 	for(i=0;i<n;i++)
 	{
 		result=result+num[i];
@@ -24,6 +24,6 @@ public class Addition extends Calculator  {
 	System.out.println("Addition of all numbers is "+result);
 
 	System.out.println("================================");
-   sc.close();
+	sc.close();
 }
 }

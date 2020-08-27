@@ -36,7 +36,7 @@ public class Addition extends Calculator  {
 		System.out.println("InputMismatchException Occured");
 		System.out.println(e);
 	}
-	sc.close();
+	
 	
 		 }
 		
