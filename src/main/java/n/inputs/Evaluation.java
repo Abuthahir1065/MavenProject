@@ -3,33 +3,33 @@ import java.util.Scanner;
 
 public class Evaluation {
 
-	static boolean isOperand(char c)
+	static boolean isOperand(char character)
 	{
-		return (c>='0' && c<='9');
+		return (character>='0' && character<='9');
 	}
-	static int operand(char c)
+	static int value(char character)
 	{
-		return (int)(c-'0');
+		return (int)(character-'0');
 	}
-	static int evaluate(String exp)
+	static int evaluate(String expression)
 	{
-		if(exp.length()==0)
+		if(expression.length()==0)
 		   return -1;
-		int result=operand(exp.charAt(0));
-		for(int i=1;i<exp.length();i+=2)
+		int result=value(expression.charAt(0));
+		for(int i=1;i<expression.length();i+=2)
 		{
-			char opr=exp.charAt(i);
-			char opd=exp.charAt(i+1);
-			if(isOperand(opd)==false)
+			char operator=expression.charAt(i);
+			char operand=expression.charAt(i+1);
+			if(isOperand(operand)==false)
 				return -1;
-			if(opr=='+')
-				result=result+operand(opd);
-			else if(opr=='-')
-					result=result-operand(opd);
-			else if(opr=='*')
-				result=result*operand(opd);
-			else if(opr=='/')
-				result=result/operand(opd);
+			if(operator=='+')
+				result=result+value(operand);
+			else if(operator=='-')
+					result=result-value(operand);
+			else if(operator=='*')
+				result=result*value(operand);
+			else if(operator=='/')
+				result=result/value(operand);
 			else 
 				return -1;
 		}
@@ -39,10 +39,10 @@ public class Evaluation {
 
 void getResult()
 {
-	Scanner sc=new Scanner(System.in);
+	Scanner input=new Scanner(System.in);
 	System.out.println("Input your Expression");
-	String exp1=sc.next();
-	int result=evaluate(exp1);
+	String expression2=input.next();
+	int result=evaluate(expression2);
 	if(result==-1)
 	{
 		System.out.println("Expression Invalid");
@@ -53,7 +53,7 @@ void getResult()
 		System.out.println("========================================");
 	}
 	
-	sc.close();
+	input.close();
 
 }
 }

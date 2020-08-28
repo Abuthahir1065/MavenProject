@@ -3,27 +3,27 @@ import java.util.Scanner;
 public class Addition extends Calculator  {
 	void getResult()
 	{
-		Scanner sc=new Scanner(System.in);
+		Scanner input=new Scanner(System.in);
 		 int result=0;
-		 int n;
-		 int i;
+		 int quantity;
+		 int index;
 		 System.out.println("Enter the number of values you want to add: ");
-		n=sc.nextInt();
-		 int num[] = new int[n];
+		quantity=input.nextInt();
+		 int number[] = new int[quantity];
 	
-	System.out.println("Input "+n+" values");
-	for(i=0;i<n;i++)
+	System.out.println("Input "+quantity+" values");
+	for(index=0;index<quantity;index++)
 	{
-		num[i]=sc.nextInt();
+		number[index]=input.nextInt();
 	}
 	
-	for(i=0;i<n;i++)
+	for(index=0;index<quantity;index++)
 	{
-		result=result+num[i];
+		result=result+number[index];
 	}
 	System.out.println("Addition of all numbers is "+result);
 
 	System.out.println("================================");
-	sc.close();
+	input.close();
 }
 }

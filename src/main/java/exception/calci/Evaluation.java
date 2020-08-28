@@ -53,7 +53,7 @@ void getResult()
 		System.out.println("========================================");
 	}
 	
-	input.close();
+	
 
 }
 }

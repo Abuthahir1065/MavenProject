@@ -6,23 +6,23 @@ public class Division extends Calculator{
 	
 	void getResult()
 	{
-	 Scanner sc = new Scanner(System.in);
-     int n,i,k;
+	 Scanner input = new Scanner(System.in);
+     int quantity,index,index2;
      System.out.println("How many numbers do you want to divide? ");
-     n=sc.nextInt();
-     double[] divisionArray = new double[n];
+     quantity=input.nextInt();
+     double[] divisionArray = new double[quantity];
 
-     for(i = 0; i < n; i++) {
-         System.out.print("Enter " +n+" numbers: ");
-         divisionArray[i] = sc.nextDouble();
+     for(index = 0; index < quantity; index++) {
+         System.out.print("Enter " +quantity+" numbers: ");
+         divisionArray[index] = input.nextDouble();
      }
 
      double result = divisionArray[0];
-     for(k = 1; k < n; k ++) {
-         result = result / divisionArray[k];
+     for(index2 = 1; index2 < quantity; index2 ++) {
+         result = result / divisionArray[index2];
      }
      System.out.println("Division of all numbers is "+result);
      System.out.println("================================");
-     sc.close();
+     input.close();
 }
 }
