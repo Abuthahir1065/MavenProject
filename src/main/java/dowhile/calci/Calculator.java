@@ -1,11 +1,8 @@
 package dowhile.calci;
-
 //Calculator program using Do while loop
-
 import java.util.Scanner;
-
-public class Calculator {
-	
+public class Calculator 
+{
 	public static void main(String[] args)
 	{
 	Scanner input=new Scanner(System.in);
@@ -15,11 +12,9 @@ public class Calculator {
     int quantity;
     int index;
     int number[] = new int[100];
-	
 	String operation=" ";
 	do
-	{
-		
+	{	
 	System.out.println("Press 1 for Addition");
 	System.out.println("Press 2 for Subtraction");
 	System.out.println("Press 3 for Multiplication");
@@ -27,9 +22,7 @@ public class Calculator {
 	System.out.println("Press 5 for Exit");
 	System.out.println("================================");
 	choice=input.nextInt();
-	
 	Master object;
-	
     switch(choice)
 	{
 	case 1:
@@ -41,13 +34,11 @@ public class Calculator {
 		{
 			number[index]=input.nextInt();
 		}
-		
 		for(index=0;index<quantity;index++)
 		{
 			result=result+number[index];
 		}
 		System.out.println("Addition of all numbers is "+result);
-	
 		System.out.println("================================");
 		break;
 	case 2:
@@ -57,7 +48,6 @@ public class Calculator {
 		System.out.println("Enter the second number: ");
 		number2=input.nextInt();
 		System.out.println("================================");
-		
 		operation="-";
 		result= object.getResult(number1, number2);
 		System.out.println(number1+" "+operation+" "+number2+" "+"="+" "+result);
@@ -70,7 +60,6 @@ public class Calculator {
 		System.out.println("Enter the second number: ");
 		number2=input.nextInt();
 		System.out.println("================================");
-		
 		operation="*";
 		result= object.getResult(number1, number2);
 		System.out.println(number1+" "+operation+" "+number2+" "+"="+" "+result);
@@ -83,7 +72,6 @@ public class Calculator {
 		System.out.println("Enter the second number: ");
 		number2=input.nextInt();
 		System.out.println("================================");
-		
 		operation="/";
 		result= object.getResult(number1, number2);
 		System.out.println(number1+" "+operation+" "+number2+" "+"="+" "+result);
@@ -91,14 +79,12 @@ public class Calculator {
 		break;
 	case 5:
 		System.out.println("You have pressed 5. The program has ended..!!");
-		
 		break;
 	default:
 		System.out.println("Wrong Choice...!!");
-		
 	 }	
    }while(choice!=5);
 	input.close();
  }
 		
-		}
+}
