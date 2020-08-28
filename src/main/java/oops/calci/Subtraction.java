@@ -1,9 +1,9 @@
 package oops.calci;
 
 public class Subtraction extends Addition {
-	int getResult(int a,int b)
+	int getResult(int number1,int number2)
 	{
-		return a-b;
+		return number1-number2;
 	}
 
 }
