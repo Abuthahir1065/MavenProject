@@ -8,13 +8,13 @@ public class Calculator {
 	
 	public static void main(String[] args)
 	{
-	Scanner sc=new Scanner(System.in);
-	int num1,num2;
+	Scanner input=new Scanner(System.in);
+	int number1,number2;
     int choice;
     int result=0;
-    int n;
-    int i;
-    int num[] = new int[100];
+    int quantity;
+    int index;
+    int number[] = new int[100];
 	
 	String operation=" ";
 	do
@@ -26,7 +26,7 @@ public class Calculator {
 	System.out.println("Press 4 for Division");
 	System.out.println("Press 5 for Exit");
 	System.out.println("================================");
-	choice=sc.nextInt();
+	choice=input.nextInt();
 	
 	Master object;
 	
@@ -35,66 +35,58 @@ public class Calculator {
 	case 1:
 		object=new Addition();
 		System.out.println("Enter the number of values you want to add: ");
-		n=sc.nextInt();
-		System.out.println("Input "+n+" values");
-		for(i=0;i<n;i++)
+		quantity=input.nextInt();
+		System.out.println("Input "+quantity+" values");
+		for(index=0;index<quantity;index++)
 		{
-			num[i]=sc.nextInt();
+			number[index]=input.nextInt();
 		}
 		
-		for(i=0;i<n;i++)
+		for(index=0;index<quantity;index++)
 		{
-			result=result+num[i];
+			result=result+number[index];
 		}
 		System.out.println("Addition of all numbers is "+result);
-	/*	System.out.println("Enter the first number: ");
-		num1=sc.nextInt();
-		System.out.println("Enter the second number: ");
-		num2=sc.nextInt();
-		System.out.println("================================");
-		
-		operation="+";
-		result=object.getResult(num1, num2);
-		System.out.println(num1+" "+operation+" "+num2+" "+"="+" "+result);*/
+	
 		System.out.println("================================");
 		break;
 	case 2:
 		object=new Subtraction();
 		System.out.println("Enter the first number: ");
-		num1=sc.nextInt();
+		number1=input.nextInt();
 		System.out.println("Enter the second number: ");
-		num2=sc.nextInt();
+		number2=input.nextInt();
 		System.out.println("================================");
 		
 		operation="-";
-		result= object.getResult(num1, num2);
-		System.out.println(num1+" "+operation+" "+num2+" "+"="+" "+result);
+		result= object.getResult(number1, number2);
+		System.out.println(number1+" "+operation+" "+number2+" "+"="+" "+result);
 		System.out.println("================================");
 		break;
 	case 3:
 		object=new Multiply();
 		System.out.println("Enter the first number: ");
-		num1=sc.nextInt();
+		number1=input.nextInt();
 		System.out.println("Enter the second number: ");
-		num2=sc.nextInt();
+		number2=input.nextInt();
 		System.out.println("================================");
 		
 		operation="*";
-		result= object.getResult(num1, num2);
-		System.out.println(num1+" "+operation+" "+num2+" "+"="+" "+result);
+		result= object.getResult(number1, number2);
+		System.out.println(number1+" "+operation+" "+number2+" "+"="+" "+result);
 		System.out.println("================================");
 		break;	
 	case 4:
 		object=new Division();
 		System.out.println("Enter the first number: ");
-		num1=sc.nextInt();
+		number1=input.nextInt();
 		System.out.println("Enter the second number: ");
-		num2=sc.nextInt();
+		number2=input.nextInt();
 		System.out.println("================================");
 		
 		operation="/";
-		result= object.getResult(num1, num2);
-		System.out.println(num1+" "+operation+" "+num2+" "+"="+" "+result);
+		result= object.getResult(number1, number2);
+		System.out.println(number1+" "+operation+" "+number2+" "+"="+" "+result);
 		System.out.println("================================");
 		break;
 	case 5:
@@ -106,7 +98,7 @@ public class Calculator {
 		
 	 }	
    }while(choice!=5);
-	sc.close();
+	input.close();
  }
 		
 		}
