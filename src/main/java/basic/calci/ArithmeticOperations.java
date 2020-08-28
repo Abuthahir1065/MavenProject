@@ -2,12 +2,13 @@ package basic.calci;
 
 import java.util.Scanner;
 
-public class ArithmeticOperations {
+public class ArithmeticOperations
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		int number1,number2;
 		int result = 0;
-		
 		int choice;
 		Scanner input=new Scanner(System.in);
 		System.out.println("Enter the first number:");
@@ -35,12 +36,8 @@ public class ArithmeticOperations {
 			break;
 		default:
 			System.out.println("Press the valid number..!!");
-			
-			
-			
 		}
 		System.out.println("Result is "+result);
        input.close();
 	}
-
 }
