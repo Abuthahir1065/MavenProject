@@ -62,7 +62,9 @@ public class Calculator {
 		
 	 }	
    }while(choice!=6);
+	
      sc.close();
+     
 	}
 		
 }
