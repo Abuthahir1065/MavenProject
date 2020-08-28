@@ -1,4 +1,4 @@
-package exception.claci;
+package exception.calci;
 
 public class InvalidChoiceException extends Exception{
 	
@@ -7,8 +7,8 @@ public class InvalidChoiceException extends Exception{
 	 */
 	private static final long serialVersionUID = -3838823403684932791L;
 
-	InvalidChoiceException(String s)
+	InvalidChoiceException(String message)
 	{
-		super(s);
+		super(message);
 	}
 }

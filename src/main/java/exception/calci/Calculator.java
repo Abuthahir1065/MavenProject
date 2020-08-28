@@ -1,4 +1,4 @@
-package exception.claci;
+package exception.calci;
 
 //Calculator program using N inputs
 
@@ -8,7 +8,7 @@ public class Calculator {
 	
 	public static void main(String[] args) throws InvalidChoiceException
 	{
-	Scanner sc=new Scanner(System.in);
+	Scanner input=new Scanner(System.in);
 	
     int choice;
    
@@ -24,7 +24,7 @@ public class Calculator {
 	System.out.println("Press 5 for Evaluating Expression");
 	System.out.println("Press 6 for Exit ");
 	System.out.println("================================");
-	choice=sc.nextInt();
+	choice=input.nextInt();
 	
 	
 	
@@ -36,20 +36,20 @@ public class Calculator {
 		
 		break;
 	case 2:
-		Subtract sub=new Subtract();
-		sub.getResult();
+		Subtract subtract=new Subtract();
+		subtract.getResult();
 		break;
 	case 3:
-		Multiply mul = new Multiply();
-		mul.getResult();
+		Multiply multiply = new Multiply();
+		multiply.getResult();
 		break;
 	case 4:
-		Division div = new Division();
-		div.getResult();
+		Division division = new Division();
+		division.getResult();
 		break;
 	case 5:
-		Evaluation evl=new Evaluation();
-		evl.getResult();
+		Evaluation evaluate=new Evaluation();
+		evaluate.getResult();
 		break;
 		
 	case 6:
@@ -63,7 +63,7 @@ public class Calculator {
 	 }	
    }while(choice!=6);
 	
-     sc.close();
+     input.close();
      
 	}
 		
