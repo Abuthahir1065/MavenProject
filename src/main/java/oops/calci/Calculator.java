@@ -1,13 +1,15 @@
 package oops.calci;
+
 //Calculator program using Hierarchical inheritance and Polymorphism (Overriding)
 import java.util.Scanner;
-public class Calculator 
-{
-	public static void main(String[] args) 
-	{
+
+public class Calculator {
+	static String operation = " ";
+
+	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int number1, number2, choice, result = 0;
-		String operation = " ";
+
 		System.out.println("Enter the first number: ");
 		number1 = input.nextInt();
 		System.out.println("Enter the second number: ");
@@ -19,26 +21,23 @@ public class Calculator
 		System.out.println("Press 4 for Division");
 		System.out.println("================================");
 		choice = input.nextInt();
-		Addition division = new Division();
-		Addition add = new Addition();
-		Addition multiply = new Multiply();
-		Addition subtract = new Subtraction();
-		switch (choice) 
-		{
+
+		switch (choice) {
 		case 1:
-			operation = "+";
+
+			Addition add = new Addition();
 			result = add.getResult(number1, number2);
 			break;
 		case 2:
-			operation = "-";
+			Subtraction subtract = new Subtraction();
 			result = subtract.getResult(number1, number2);
 			break;
 		case 3:
-			operation = "*";
+			Multiply multiply = new Multiply();
 			result = multiply.getResult(number1, number2);
 			break;
 		case 4:
-			operation = "/";
+			Division division = new Division();
 			result = division.getResult(number1, number2);
 			break;
 		default:
