@@ -6,8 +6,8 @@ public class Evaluation
 	{
 		return (character >= '0' && character <= '9');
 	}
-	static int value(char character)
-	{
+
+	static int value(char character) {
 		return (int) (character - '0');
 	}
 	static int evaluate(String expression) 
@@ -49,6 +49,6 @@ public class Evaluation
 			System.out.println("Value of the expression is " + result);
 			System.out.println("========================================");
 		}
-		input.close();
+		
 	}
 }
