@@ -66,7 +66,11 @@ public class Calculator {
 				System.out.println("You have pressed 6. The program has ended..!!");
 				break;
 			default:
-				throw new InvalidChoiceException("Invalid Choice..!InvalidChoiceException Occurs..!");
+				try {
+					throw new InvalidChoiceException("Invalid Choice..!InvalidChoiceException Occurs..!");
+				} catch (Exception message) {
+					System.out.println(message);
+				}
 			}
 		} while (choice != 6);
 	}
