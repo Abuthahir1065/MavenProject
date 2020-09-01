@@ -60,8 +60,9 @@ public class Calculator {
 				System.out.println("How many numbers do you want to divide? ");
 				quantity = input.nextInt();
 				double[] divisionArray = new double[quantity];
+				System.out.print("Enter " + quantity + " numbers: ");
 				for (index = 0; index < quantity; index++) {
-					System.out.print("Enter " + quantity + " numbers: ");
+			
 					divisionArray[index] = input.nextDouble();
 				}
 				Division division = new Division();
