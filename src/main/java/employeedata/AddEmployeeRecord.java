@@ -10,7 +10,7 @@ public class AddEmployeeRecord extends Employee {
 		ArrayList<String> list = new ArrayList<String>();
 		System.out.print("Enter Id: ");
 
-		id = input.next();
+		id = input.nextInt();
 		System.out.print("Enter the Name: ");
 		list.add(input.next());
 

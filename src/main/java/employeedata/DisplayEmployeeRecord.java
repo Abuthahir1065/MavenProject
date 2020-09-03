@@ -12,7 +12,7 @@ public class DisplayEmployeeRecord extends Employee {
 		System.out.println("ID | NAME | DEPARMENT | DESIGNATION");
 		System.out.println("=================================");
 
-		for (Entry<Object, List<String>> m : map.entrySet()) {
+		for (Entry<Integer, List<String>> m : map.entrySet()) {
 			System.out.print(m.getKey());
 			System.out.print(m.getValue() + "\n\n");
 		}

@@ -7,16 +7,16 @@ import java.util.Scanner;
 
 class Employee {
 
-	static String id;
+	static int id;
 	static String name;
 	static String department;
 	static String designation;
-	static Map<Object, List<String>> map;
+	static Map<Integer, List<String>> map;
 	static Scanner input = new Scanner(System.in);
 	
 	public static void main(String[] args) {
 		int choice;
-		map = new HashMap<Object, List<String>>();
+		map = new HashMap<Integer, List<String>>();
 		
 		do {
 			System.out.println("Press 1 to Add Record");
