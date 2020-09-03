@@ -1,4 +1,4 @@
-package ArrayListCalci;
+package arraylist.calci;
 
 import java.util.ArrayList;
 //Calculator program using ArrayLists
