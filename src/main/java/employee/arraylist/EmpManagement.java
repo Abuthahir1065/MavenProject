@@ -9,17 +9,13 @@ public class EmpManagement {
 	List<Employee> employees = new ArrayList<Employee>();
 	Scanner sc = new Scanner(System.in);
 
-	public EmpManagement() {
+	
 
-	}
-
-	public void add(Employee emp) {
+	public void addRecord(Employee emp) {
 		employees.add(emp);
 	}
 
-	public List<Employee> getAll() {
-		return employees;
-	}
+	
 
 	public void printAllEmpData() {
 		employees.forEach(emp -> System.out.println(emp));

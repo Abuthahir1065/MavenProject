@@ -29,7 +29,7 @@ public class EmpMainClass {
 				System.out.println("Enter the Designation: ");
 				String designation = sc.next();
 				Employee emp = new Employee(id, name, department, designation);
-				empManagement.add(emp);
+				empManagement.addRecord(emp);
 				System.out.println("Record has been added..!!");
 				System.out.println("==================================");
 				break;
