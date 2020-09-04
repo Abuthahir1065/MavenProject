@@ -4,19 +4,14 @@ import java.util.Scanner;
 
 public class EmpMainClass {
 
-	Scanner sc = new Scanner(System.in);
+	
 
 	public static void main(String[] args) {
-		new EmpMainClass().testEmpManagement();
-	}
-
-	public void testEmpManagement() {
 		int choice;
-
+		Scanner sc = new Scanner(System.in);
 		EmpManagement empManagement = new EmpManagement();
 		do {
-			System.out.println(
-					"Enter your choice \n1.Add Record\n2.Show All Records\n3.Delete Record\n4.Search Record\n5.Exit");
+			System.out.println("Enter your choice \n1.Add Record\n2.Show All Records\n3.Delete Record\n4.Search Record\n5.Exit");
 			choice = sc.nextInt();
 			switch (choice) {
 			case 1:
@@ -61,5 +56,7 @@ public class EmpMainClass {
 			}
 		} while (choice != 5);
 	}
+
+	
 
 }
