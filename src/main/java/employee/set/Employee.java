@@ -1,4 +1,4 @@
-package employee.arraylist;
+package employee.set;
 
 public class Employee {
 
@@ -8,7 +8,7 @@ public class Employee {
 	String designation;
 
 	public Employee(int id, String name, String department, String designation) {
-
+		
 		this.id = id;
 		this.name = name;
 		this.department = department;
@@ -19,7 +19,7 @@ public class Employee {
 		return id;
 	}
 
-	/*public void setId(int id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -45,7 +45,7 @@ public class Employee {
 
 	public void setDesignation(String designation) {
 		this.designation = designation;
-	}*/
+	}
 
 	@Override
 	public String toString() {
