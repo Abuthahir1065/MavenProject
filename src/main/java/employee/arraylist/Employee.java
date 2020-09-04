@@ -1,49 +1,56 @@
 package employee.arraylist;
 
-import java.util.Scanner;
+public class Employee {
 
-class Employee {
+	int id;
+	String name;
+	String department;
+	String designation;
 
-	static int id;
-	static String name;
-	static String department;
-	static String designation;
-	
-	static Scanner input = new Scanner(System.in);
-	
-	public static void main(String[] args) {
-		int choice;
-		do {
-			System.out.println("Press 1 to Add Record");
-			System.out.println("Press 2 to Search Record");
-			System.out.println("Press 3 to Delete Record");
-			System.out.println("Press 4 to Display All record");
-			System.out.println("Press 5 to Exit");
-			choice = input.nextInt();
-			switch (choice) {
-			case 1:
-				AddEmployeeRecord add = new AddEmployeeRecord();
-				add.addRecord();
-				break;
-			case 2:
-				SearchEmployeeRecord search = new SearchEmployeeRecord();
-				search.searchRecord();
-				break;
-			case 3:
-				DeleteEmployeeRecord delete = new DeleteEmployeeRecord();
-				delete.deleteRecord();
-				break;
-			case 4:
-				DisplayEmployeeRecord display = new DisplayEmployeeRecord();
-				display.displayRecord();
-				break;
-			case 5:
-				System.out.println("You have pressed 5..The program has been ended...!!!");
-				break;
-			default:
-				System.out.println("Wrong Choice...!!");	
-			}
-		} while (choice != 5);
-		
+	public Employee(int id, String name, String department, String designation) {
+
+		this.id = id;
+		this.name = name;
+		this.department = department;
+		this.designation = designation;
 	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+	public String getDesignation() {
+		return designation;
+	}
+
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", department=" + department + ", designation=" + designation
+				+ "]";
+	}
+
 }
