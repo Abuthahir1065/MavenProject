@@ -54,11 +54,11 @@ public class EmpManagement {
 		System.out.println("=================================");
 	}
 	public void search(int id) {
-		//for (Employee employee : employees) {
+		for (Employee employee : employees) {
 			if (((Employee) employees).getId() == id) {
 
-				/*System.out.println(employees.get(employees.indexOf(employee)));*/
-				System.out.println(employees.get(employees.indexOf(employees)));
+				System.out.println(employees.get(employees.indexOf(employee)));
+		
 				
 			}
 			else
