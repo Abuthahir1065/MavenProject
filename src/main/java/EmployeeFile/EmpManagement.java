@@ -1,9 +1,14 @@
-package employee.arraylist;
+package EmployeeFile;
 
+
+import java.io.FileReader;
+import java.io.IOException;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+
 
 
 
@@ -15,13 +20,16 @@ public class EmpManagement {
 	
 
 	public void addRecord(Employee emp) {
+		
 		employees.add(emp);
 	}
 
 	
 
-	public void printAllEmpData() {
+	public void printAllEmpData()  {
+		
 		employees.forEach(emp -> System.out.println(emp));
+
 	}
 
 	public boolean delete(int id) {
@@ -50,23 +58,33 @@ public class EmpManagement {
 				
 			}
 		}
-		System.out.println("Record has been Modified..!!");
-		System.out.println("=================================");
+		
 	}
+	public void readFile() throws IOException
+	{
+		FileReader fr=new FileReader("D:\\records.txt");    
+		int i;    
+		while((i=fr.read())!=-1)    
+		{
+			System.out.print((char)i);  
+		}
+		System.out.println("\n");
+		fr.close();  
+	}
+	
 	public void search(int id) {
-		//for (Employee employee : employees) {
-			if (((Employee) employees).getId() == id) {
+		for (Employee employee : employees) {
+			if (employee.getId() == id) {
 
-				/*System.out.println(employees.get(employees.indexOf(employee)));*/
-				System.out.println(employees.get(employees.indexOf(employees)));
+				System.out.println(employees.get(employees.indexOf(employee)));
 				
 			}
-			else
-			{
-				System.out.println("Record Not Found..!");
-			}
+			
+			
 		}
-
+	
+	
 	}
+
 
 }

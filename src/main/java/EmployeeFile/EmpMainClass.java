@@ -1,21 +1,22 @@
-package employee.arraylist;
+package EmployeeFile;
+
 
 import java.io.IOException;
-
+import java.io.PrintStream;
 import java.util.Scanner;
 
 
-
+import java.io.File;
 public class EmpMainClass {
 
 	
 
-	public static void main(String[] args)  throws IOException {
+	public static void main(String[] args) throws IOException {
 		int choice;
 		Scanner sc = new Scanner(System.in);
 		EmpManagement empManagement = new EmpManagement();
 		do {
-			System.out.println("Enter your choice \n1.Add Record\n2.Show All Records \n3.Delete Record\n4.Search Record\n5.Modify Records\n6.Exit");
+			System.out.println("Enter your choice \n\n1.Add Record\n2.Print All Records into a file\n3.Delete Record\n4.Search Record\n5.Modify Records\n6.Read File\n7.Show All Records\n8.Exit");
 			choice = sc.nextInt();
 			switch (choice) {
 			case 1:
@@ -32,19 +33,17 @@ public class EmpMainClass {
 				System.out.println("Record has been added..!!");
 				System.out.println("==================================");
 				break;
-			/*case 2:
+			case 2:
 				File file=new File("D:\\records.txt");
 				PrintStream stream=new PrintStream(file);
 				PrintStream console = System.out;
 				System.out.println("Record has been printed in your file..!!");
+				System.out.println("==================================");
 				System.setOut(stream);
 				empManagement.printAllEmpData();
 				
 				  
 			     System.setOut(console); 
-				break;*/
-			case 2:
-				empManagement.printAllEmpData();
 				break;
 			case 3:
 				System.out.println("Enter the Id you want to delete the record:");
@@ -63,16 +62,28 @@ public class EmpMainClass {
 				System.out.println("Enter the Id you want to Modify:");
 				id = sc.nextInt();
 				empManagement.Modify(id);
+				System.out.println("Record has been Modified..!!");
+				System.out.println("==================================");
 				break;
 			case 6:
-				System.out.println("You have Pressed 6..The program has been ended..!!");
+				empManagement.readFile();
+				System.out.println("File has been read successfully");
+				System.out.println("==================================");
+				break;
+			case 7:
+				empManagement.printAllEmpData();
+				System.out.println("==================================");
+				break;
+			case 8:
+				System.out.println("You have Pressed 8..The program has been ended..!!");
 				System.out.println("==================================");
 				break;
 			default:
 				System.out.println("Wrong Choice...!!");
+				System.out.println("==================================");
 				break;
 			}
-		} while (choice != 6);
+		} while (choice != 8);
 	}
 
 	

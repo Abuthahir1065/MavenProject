@@ -1,4 +1,4 @@
-package employee.set;
+package EmployeeFile;
 
 public class Employee {
 
@@ -8,7 +8,7 @@ public class Employee {
 	String designation;
 
 	public Employee(int id, String name, String department, String designation) {
-		
+
 		this.id = id;
 		this.name = name;
 		this.department = department;
@@ -49,8 +49,11 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", department=" + department + ", designation=" + designation
-				+ "]";
+		return "[id=" + id + "| name=" + name + "| department=" + department + "| designation=" + designation
+				 + "]";
+	}
+	     
 	}
 
-}
+	
+

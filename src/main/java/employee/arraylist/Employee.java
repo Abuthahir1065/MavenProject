@@ -19,7 +19,7 @@ public class Employee {
 		return id;
 	}
 
-	/*public void setId(int id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -45,12 +45,12 @@ public class Employee {
 
 	public void setDesignation(String designation) {
 		this.designation = designation;
-	}*/
-
+	}
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", department=" + department + ", designation=" + designation
-				+ "]";
+		System.out.println("id : " + id + "\t" + " name : " + name + "\t" + " department : " + department + "\t "
+				+ " designation : " + designation + "\t");
+	     return " ";
 	}
-
+	
 }
