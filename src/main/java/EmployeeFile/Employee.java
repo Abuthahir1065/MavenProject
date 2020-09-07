@@ -1,4 +1,4 @@
-package EmployeeFile;
+package employeeFile;
 
 public class Employee {
 
