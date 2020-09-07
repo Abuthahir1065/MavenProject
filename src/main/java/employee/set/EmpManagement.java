@@ -3,15 +3,19 @@ package employee.set;
 
 
 
+
 import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
+
+
 
 
 
 
 public class EmpManagement {
 
- HashSet<Employee> employees = new HashSet<Employee>();
+ Set<Employee> employees = new HashSet<Employee>();
 Scanner sc=new Scanner(System.in);
 	
 	public void addRecord(Employee emp) {
@@ -55,6 +59,8 @@ Scanner sc=new Scanner(System.in);
 		}
 		
 	}
+	
+	
 
 	public void printAllEmpData() {
 		employees.forEach(emp -> System.out.println(emp));
@@ -80,5 +86,7 @@ Scanner sc=new Scanner(System.in);
 		}
 		
 	}
+
+	
 
 }

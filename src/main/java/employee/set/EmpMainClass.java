@@ -56,6 +56,8 @@ public class EmpMainClass {
 				System.out.println("Enter the Id you want to Modify:");
 				id = sc.nextInt();
 				empManagement.modify(id);
+                System.out.println("Record has been Modified..!!");
+				System.out.println("==================================");
 				break;
 			case 6:
 				System.out.println("You have Pressed 6..The program has been ended..!!");
@@ -66,7 +68,7 @@ public class EmpMainClass {
 				System.out.println("Wrong Choice...!!");
 				break;
 			}
-		} while (choice != 5);
+		} while (choice != 6);
 	}
 
 	
