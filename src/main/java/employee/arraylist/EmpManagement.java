@@ -7,6 +7,10 @@ import java.util.Scanner;
 
 
 
+
+
+
+
 public class EmpManagement {
 
 	List<Employee> employees = new ArrayList<Employee>();
@@ -39,34 +43,47 @@ public class EmpManagement {
 		{
 			if(employee.getId()==id)
 			{ 
-				System.out.println("Enter Id:");
-				employee.setId(sc.nextInt());
-				System.out.println("Enter Name:");
-				employee.setName(sc.next());
-				System.out.println("Enter Department:");
-				employee.setDepartment(sc.next());
-				System.out.println("Enter Designation:");
-				employee.setDesignation(sc.next());
+				
+				System.out.println("Enter the field you want to modify:\n1.Id\n2.Name\n3.Department\n4.Designation\n");
+				int choice=sc.nextInt();
+				switch (choice) {
+				case 1:
+					System.out.println("Enter Id:");
+					employee.setId(sc.nextInt());
+					break;
+				case 2:
+					System.out.println("Enter Name:");
+					employee.setName(sc.next());
+					break;
+				case 3:
+					System.out.println("Enter Department:");
+					employee.setDepartment(sc.next());
+					break;
+				case 4:
+					System.out.println("Enter Designation:");
+					employee.setDesignation(sc.next());
+					break;
+				
+				default:
+					System.out.println("Wrong Choice..!!");
+					break;
+				}
+				
 				
 			}
 		}
-		System.out.println("Record has been Modified..!!");
-		System.out.println("=================================");
+		
 	}
+	
 	public void search(int id) {
 		for (Employee employee : employees) {
-			if (((Employee) employees).getId() == id) {
+			if (employee.getId() == id) {
 
 				System.out.println(employees.get(employees.indexOf(employee)));
-		
 				
 			}
-			else
-			{
-				System.out.println("Record Not Found..!");
-			}
+			
+			
 		}
-
-	}
-
+}
 }
