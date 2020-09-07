@@ -62,7 +62,7 @@ public class EmpMainClass {
 			case 5:
 				System.out.println("Enter the Id you want to Modify:");
 				id = sc.nextInt();
-				empManagement.Modify(id);
+				empManagement.modify(id);
 				break;
 			case 6:
 				System.out.println("You have Pressed 6..The program has been ended..!!");

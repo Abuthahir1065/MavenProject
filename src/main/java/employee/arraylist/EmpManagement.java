@@ -37,7 +37,7 @@ public class EmpManagement {
 		}
 		return false;
 	}
-	public void Modify(int id)
+	public void modify(int id)
 	{
 		for(Employee employee:employees)
 		{
