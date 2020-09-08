@@ -24,18 +24,21 @@ Scanner sc=new Scanner(System.in);
 
 	public void modify(int id)
 	{
+		int choice;
 		for(Employee employee:employees)
 		{
 			if(employee.getId()==id)
 			{ 
 				
-				System.out.println("Enter the field you want to modify:\n1.Id\n2.Name\n3.Department\n4.Designation\n");
-				int choice=sc.nextInt();
-				switch (choice) {
-				case 1:
-					System.out.println("Enter Id:");
-					employee.setId(sc.nextInt());
-					break;
+				do {	
+					
+					System.out.println("Enter the field you want to modify:\n1.Id\n2.Name\n3.Department\n4.Designation\n5.Stop Editing");
+					 choice=sc.nextInt();
+					switch (choice) {
+					case 1:
+						System.out.println("Enter Id: ");
+						employee.setId(sc.nextInt());
+					    break;
 				case 2:
 					System.out.println("Enter Name:");
 					employee.setName(sc.next());
@@ -48,12 +51,15 @@ Scanner sc=new Scanner(System.in);
 					System.out.println("Enter Designation:");
 					employee.setDesignation(sc.next());
 					break;
-				
+				case 5:
+					System.out.println("You have pressed 5.!!Editing has been done..!!");
+					break;
 				default:
 					System.out.println("Wrong Choice..!!");
 					break;
 				}
-				
+				}while(choice!=5);
+		
 				
 			}
 		}
@@ -82,6 +88,9 @@ Scanner sc=new Scanner(System.in);
 			if(employee.getId()==id) {
 				
 		   System.out.println(employee);
+			}
+			else {
+				System.out.println("Record Not found..!!");
 			}
 		}
 		
