@@ -6,14 +6,14 @@ public class Employee {
 	String name;
 	String department;
 	String designation;
-   
+
 	public Employee(int id, String name, String department, String designation) {
 
 		this.id = id;
 		this.name = name;
 		this.department = department;
 		this.designation = designation;
-		
+
 	}
 
 	public int getId() {
@@ -47,11 +47,11 @@ public class Employee {
 	public void setDesignation(String designation) {
 		this.designation = designation;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "[id=" + id + ", name=" + name + ", department=" + department + ", designation=" + designation
-				+ "," + "]";
+		return "[id=" + id + ", name=" + name + ", department=" + department + ", designation=" + designation + ","
+				+ "]";
 	}
-	
+
 }

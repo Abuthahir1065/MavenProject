@@ -1,22 +1,20 @@
 package employee.file;
 
-
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Scanner;
 
-
 import java.io.File;
-public class EmpMainClass {
 
-	
+public class EmpMainClass {
 
 	public static void main(String[] args) throws IOException {
 		int choice;
 		Scanner sc = new Scanner(System.in);
 		EmpManagement empManagement = new EmpManagement();
 		do {
-			System.out.println("Enter your choice \n\n1.Add Record\n2.Print All Records into a file\n3.Delete Record\n4.Search Record\n5.Modify Records\n6.Read File\n7.Show All Records\n8.Exit");
+			System.out.println(
+					"Enter your choice \n\n1.Add Record\n2.Print All Records into a file\n3.Delete Record\n4.Search Record\n5.Modify Records\n6.Read File\n7.Show All Records\n8.Exit");
 			choice = sc.nextInt();
 			switch (choice) {
 			case 1:
@@ -34,16 +32,14 @@ public class EmpMainClass {
 				System.out.println("==================================");
 				break;
 			case 2:
-				File file=new File("D:\\records.txt");
-				PrintStream stream=new PrintStream(file);
+				File file = new File("D:\\records.txt");
+				PrintStream stream = new PrintStream(file);
 				PrintStream console = System.out;
 				System.out.println("Record has been printed in your file..!!");
 				System.out.println("==================================");
 				System.setOut(stream);
 				empManagement.printAllEmpData();
-				
-				  
-			     System.setOut(console); 
+                System.setOut(console);
 				break;
 			case 3:
 				System.out.println("Enter the Id you want to delete the record:");
@@ -85,7 +81,5 @@ public class EmpMainClass {
 			}
 		} while (choice != 8);
 	}
-
-	
 
 }
