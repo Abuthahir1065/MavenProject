@@ -32,17 +32,7 @@ public class EmpMainClass {
 				System.out.println("Record has been added..!!");
 				System.out.println("==================================");
 				break;
-			/*case 2:
-				File file=new File("D:\\records.txt");
-				PrintStream stream=new PrintStream(file);
-				PrintStream console = System.out;
-				System.out.println("Record has been printed in your file..!!");
-				System.setOut(stream);
-				empManagement.printAllEmpData();
-				
-				  
-			     System.setOut(console); 
-				break;*/
+			
 			case 2:
 				empManagement.printAllEmpData();
 				break;
