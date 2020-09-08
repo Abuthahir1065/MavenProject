@@ -68,6 +68,10 @@ public class EmpManagement {
 				System.out.println(employees.get(employees.indexOf(employee)));
 
 			}
+			else
+			{
+				System.out.println("Record Not found..!!");
+			}
 
 		}
 	}

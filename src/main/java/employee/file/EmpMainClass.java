@@ -57,7 +57,7 @@ public class EmpMainClass {
 			case 5:
 				System.out.println("Enter the Id you want to Modify:");
 				id = sc.nextInt();
-				empManagement.Modify(id);
+				empManagement.modify(id);
 				System.out.println("Record has been Modified..!!");
 				System.out.println("==================================");
 				break;
