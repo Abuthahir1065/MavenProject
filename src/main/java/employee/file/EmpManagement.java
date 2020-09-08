@@ -1,5 +1,6 @@
 package employee.file;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -82,7 +83,9 @@ public class EmpManagement {
 
 
 	public void readFile() throws IOException {
-		FileReader fr = new FileReader("D:\\records.txt");
+		String Path = new File("").getAbsolutePath();
+		
+		FileReader fr = new FileReader(Path+"\\records.txt");
 		int i;
 		while ((i = fr.read()) != -1) {
 			System.out.print((char) i);

@@ -35,10 +35,11 @@ public class EmpMainClass {
 				System.out.println("==================================");
 				break;
 			case 2:
-				File file = new File("D:\\records.txt");
+				String Path = new File("").getAbsolutePath();
+				File file = new File(Path+"\\records.txt");
 				PrintStream stream = new PrintStream(file);
 				PrintStream console = System.out;
-				System.out.println("Record has been printed in your file..!!");
+				System.out.println("Record has been printed in " +file.getAbsolutePath()+"!!");
 				System.out.println("==================================");
 				System.setOut(stream);
 				empManagement.printAllEmpData();
