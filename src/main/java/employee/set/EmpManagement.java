@@ -20,8 +20,7 @@ public class EmpManagement {
 
 				do {
 
-					System.out.println(
-							"Enter the field you want to modify:\n1.Id\n2.Name\n3.Department\n4.Designation\n5.Stop Editing");
+					System.out.println("Enter the field you want to modify:\n1.Id\n2.Name\n3.Department\n4.Designation\n5.Salary\n6.Stop Editing");
 					choice = sc.nextInt();
 					switch (choice) {
 					case 1:
@@ -41,13 +40,17 @@ public class EmpManagement {
 						employee.setDesignation(sc.next());
 						break;
 					case 5:
-						System.out.println("You have pressed 5.!!Editing has been done..!!");
+						System.out.println("Enter Salary:");
+						employee.setSalary(sc.next());
+						break;
+					case 6:
+						System.out.println("You have pressed 6.!!Editing has been done..!!");
 						break;
 					default:
 						System.out.println("Wrong Choice..!!");
 						break;
 					}
-				} while (choice != 5);
+				} while (choice != 6);
 
 			}
 		}

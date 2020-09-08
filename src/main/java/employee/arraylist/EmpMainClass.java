@@ -27,7 +27,9 @@ public class EmpMainClass {
 				String department = sc.next();
 				System.out.println("Enter the Designation: ");
 				String designation = sc.next();
-				Employee emp = new Employee(id, name, department, designation);
+				System.out.println("Enter the Salary: ");
+				String salary = sc.next();
+				Employee emp = new Employee(id, name, department, designation,salary);
 				empManagement.addRecord(emp);
 				System.out.println("Record has been added..!!");
 				System.out.println("==================================");

@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class MainClass {
 
-	static String name, department, designation;
+	static String name, department, designation, salary;
 	static int id;
 
 	static Scanner sc;
@@ -33,8 +33,10 @@ public class MainClass {
 				department = sc.next();
 				System.out.println("Enter the Designation: ");
 				designation = sc.next();
+				System.out.println("Enter the Salary: ");
+				salary = sc.next();
 
-				Employee emp = new Employee(id, name, department, designation);
+				Employee emp = new Employee(id, name, department, designation,salary);
 				AddRecord.add(emp);
 				System.out.println("Record added successfully!!");
 				System.out.println("==================================================");
@@ -60,7 +62,7 @@ public class MainClass {
 				break;
 			}
 			case 5:
-				Employee emp = new Employee(id, name, department, designation);
+				Employee emp = new Employee(id, name, department, designation,salary);
 				ModifyRecord.modifyRecord(emp);
 				System.out.println("==================================================");
 				break;

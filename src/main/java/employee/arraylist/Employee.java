@@ -6,13 +6,22 @@ public class Employee {
 	String name;
 	String department;
 	String designation;
-
-	public Employee(int id, String name, String department, String designation) {
+    String salary;
+	public Employee(int id, String name, String department, String designation,String salary) {
 
 		this.id = id;
 		this.name = name;
 		this.department = department;
 		this.designation = designation;
+		this.salary=salary;
+	}
+
+	public String getSalary() {
+		return salary;
+	}
+
+	public void setSalary(String salary) {
+		this.salary = salary;
 	}
 
 	public int getId() {
@@ -77,7 +86,7 @@ public class Employee {
 	@Override
 	public String toString() {
 		System.out.println("id : " + id + "\t" + " name : " + name + "\t" + " department : " + department + "\t "
-				+ " designation : " + designation + "\t");
+				+ " designation : " + designation + "\t"+"salary : "+salary+"\t");
 	     return " ";
 	}
 	

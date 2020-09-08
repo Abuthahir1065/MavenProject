@@ -10,7 +10,7 @@ public class ModifyRecord extends AddRecord {
 
 		do {
 			System.out.println(
-					"Enter the field you want to modify:\n1.Id\n2.Name\n3.Department\n4.Designation\n5.Stop Editing");
+					"Enter the field you want to modify:\n1.Id\n2.Name\n3.Department\n4.Designation\n5.Salary\n6.Stop Editing");
 			choice = sc.nextInt();
 			switch (choice) {
 			case 1:
@@ -30,13 +30,17 @@ public class ModifyRecord extends AddRecord {
 				emp.setDesignation(sc.next());
 				break;
 			case 5:
-				System.out.println("You have pressed 5.!!Editing has been done..!!");
+				System.out.println("Enter Salary:");
+				emp.setSalary(sc.next());
+				break;
+			case 6:
+				System.out.println("You have pressed 6.!!Editing has been done..!!");
 				break;
 			default:
 				System.out.println("Wrong Choice..!!");
 				break;
 			}
-		} while (choice != 5);
+		} while (choice != 6);
 	}
 
 }
