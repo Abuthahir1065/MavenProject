@@ -1,4 +1,4 @@
-package SelaniumFirstProgram;
+package selaniumfirstprogram;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,31 +11,31 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
-
 public class FirstProgram {
 
 	static String chromePath, url;
 	static WebDriver driver;
-    @BeforeClass
-    public void beforeClass()
-    {
-    	System.out.println("FirstProgram Class is ready to test...");
-    }
-    @AfterClass
-    public void afterClass()
-    {
-    	System.out.println("FirstProgram Class is tested..!");
-    }
+
+	@BeforeClass
+	public void beforeClass() {
+		System.out.println("FirstProgram Class is ready to test...");
+	}
+
+	@AfterClass
+	public void afterClass() {
+		System.out.println("FirstProgram Class is tested..!");
+	}
+
 	@BeforeTest
-	public void beforeTest()
-	{
+	public void beforeTest() {
 		System.out.println("Testing begins......");
 	}
+
 	@AfterTest
-	public void afterTest()
-	{
+	public void afterTest() {
 		System.out.println("Testing ends......!");
 	}
+
 	@BeforeMethod
 	public void beforeMethod() {
 		System.out.println("gurutest method is executing....");
