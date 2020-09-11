@@ -22,6 +22,7 @@ public class SecondProgram {
 
 	@Test
 	public void google() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver",chromePath);
 		driver = new ChromeDriver();
 		driver.get(url);
 		driver.findElement(By.name("q")).sendKeys("java");

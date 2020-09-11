@@ -2,62 +2,62 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-10T11:24:23Z" name="Default suite" finished-at="2020-09-10T11:24:49Z" duration-ms="26197">
+  <suite started-at="2020-09-11T05:38:42Z" name="Default suite" finished-at="2020-09-11T05:39:11Z" duration-ms="29206">
     <groups>
     </groups>
-    <test started-at="2020-09-10T11:24:23Z" name="Default test" finished-at="2020-09-10T11:24:49Z" duration-ms="26197">
-      <class name="SelaniumFirstProgram.FirstProgram">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:SelaniumFirstProgram.FirstProgram@45dd4eda]" started-at="2020-09-10T11:24:23Z" name="beforeTest" finished-at="2020-09-10T11:24:23Z" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:SelaniumFirstProgram.FirstProgram@45dd4eda]" started-at="2020-09-10T11:24:23Z" name="beforeClass" finished-at="2020-09-10T11:24:23Z" duration-ms="1" status="PASS">
+    <test started-at="2020-09-11T05:38:42Z" name="Default test" finished-at="2020-09-11T05:39:11Z" duration-ms="29206">
+      <class name="selaniumfirstprogram.SecondProgram">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:selaniumfirstprogram.SecondProgram@60611244]" started-at="2020-09-11T05:39:00Z" name="beforeClass" finished-at="2020-09-11T05:39:00Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SelaniumFirstProgram.FirstProgram@45dd4eda]" started-at="2020-09-10T11:24:23Z" name="beforeMethod" finished-at="2020-09-10T11:24:23Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:selaniumfirstprogram.SecondProgram@60611244]" started-at="2020-09-11T05:39:00Z" name="beforeMethod" finished-at="2020-09-11T05:39:00Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="guruTest()[pri:0, instance:SelaniumFirstProgram.FirstProgram@45dd4eda]" started-at="2020-09-10T11:24:23Z" name="guruTest" finished-at="2020-09-10T11:24:38Z" duration-ms="14454" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- guruTest -->
-        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:SelaniumFirstProgram.FirstProgram@45dd4eda]" started-at="2020-09-10T11:24:38Z" name="AfterMethod" finished-at="2020-09-10T11:24:38Z" duration-ms="265" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:SelaniumFirstProgram.FirstProgram@45dd4eda]" started-at="2020-09-10T11:24:38Z" name="afterClass" finished-at="2020-09-10T11:24:38Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:SelaniumFirstProgram.FirstProgram@45dd4eda]" started-at="2020-09-10T11:24:49Z" name="afterTest" finished-at="2020-09-10T11:24:49Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- SelaniumFirstProgram.FirstProgram -->
-      <class name="SelaniumFirstProgram.SecondProgram">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SelaniumFirstProgram.SecondProgram@60611244]" started-at="2020-09-10T11:24:38Z" name="beforeMethod" finished-at="2020-09-10T11:24:38Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:SelaniumFirstProgram.SecondProgram@60611244]" started-at="2020-09-10T11:24:38Z" name="beforeClass" finished-at="2020-09-10T11:24:38Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="google()[pri:0, instance:SelaniumFirstProgram.SecondProgram@60611244]" started-at="2020-09-10T11:24:38Z" name="google" finished-at="2020-09-10T11:24:47Z" duration-ms="9124" status="PASS">
+        <test-method signature="google()[pri:0, instance:selaniumfirstprogram.SecondProgram@60611244]" started-at="2020-09-11T05:39:00Z" name="google" finished-at="2020-09-11T05:39:09Z" duration-ms="9293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- google -->
-        <test-method is-config="true" signature="exit()[pri:0, instance:SelaniumFirstProgram.SecondProgram@60611244]" started-at="2020-09-10T11:24:47Z" name="exit" finished-at="2020-09-10T11:24:49Z" duration-ms="2319" status="PASS">
+        <test-method is-config="true" signature="exit()[pri:0, instance:selaniumfirstprogram.SecondProgram@60611244]" started-at="2020-09-11T05:39:09Z" name="exit" finished-at="2020-09-11T05:39:11Z" duration-ms="2321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:SelaniumFirstProgram.SecondProgram@60611244]" started-at="2020-09-10T11:24:49Z" name="afterClass" finished-at="2020-09-10T11:24:49Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:selaniumfirstprogram.SecondProgram@60611244]" started-at="2020-09-11T05:39:11Z" name="afterClass" finished-at="2020-09-11T05:39:11Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- SelaniumFirstProgram.SecondProgram -->
+      </class> <!-- selaniumfirstprogram.SecondProgram -->
+      <class name="selaniumfirstprogram.FirstProgram">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:selaniumfirstprogram.FirstProgram@45dd4eda]" started-at="2020-09-11T05:38:42Z" name="beforeTest" finished-at="2020-09-11T05:38:42Z" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:selaniumfirstprogram.FirstProgram@45dd4eda]" started-at="2020-09-11T05:38:42Z" name="beforeClass" finished-at="2020-09-11T05:38:42Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="guruTest()[pri:0, instance:selaniumfirstprogram.FirstProgram@45dd4eda]" started-at="2020-09-11T05:38:42Z" name="guruTest" finished-at="2020-09-11T05:39:00Z" duration-ms="17354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- guruTest -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:selaniumfirstprogram.FirstProgram@45dd4eda]" started-at="2020-09-11T05:38:42Z" name="beforeMethod" finished-at="2020-09-11T05:38:42Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:selaniumfirstprogram.FirstProgram@45dd4eda]" started-at="2020-09-11T05:39:00Z" name="AfterMethod" finished-at="2020-09-11T05:39:00Z" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:selaniumfirstprogram.FirstProgram@45dd4eda]" started-at="2020-09-11T05:39:00Z" name="afterClass" finished-at="2020-09-11T05:39:00Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:selaniumfirstprogram.FirstProgram@45dd4eda]" started-at="2020-09-11T05:39:11Z" name="afterTest" finished-at="2020-09-11T05:39:11Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- selaniumfirstprogram.FirstProgram -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

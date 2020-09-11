@@ -46,6 +46,7 @@ public class FirstProgram {
 
 	@Test
 	public void guruTest() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver",chromePath);
 		driver = new ChromeDriver();
 		driver.get(url);
 		driver.findElement(By.name("email")).sendKeys("abu@gmail.com");
