@@ -3,26 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SelaniumFirstProgram.FirstProgram">
+      <class name="selaniumsecondprogram.DemoBlaze">
         <methods>
-          <include name="beforeClass"/>
           <include name="beforeMethod"/>
-          <include name="AfterMethod"/>
-          <include name="guruTest"/>
-          <include name="afterTest"/>
-          <include name="afterClass"/>
-          <include name="beforeTest"/>
+          <include name="login"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- SelaniumFirstProgram.FirstProgram -->
-      <class name="SelaniumFirstProgram.SecondProgram">
-        <methods>
-          <include name="google"/>
-          <include name="afterClass"/>
-          <include name="beforeMethod"/>
-          <include name="exit"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- SelaniumFirstProgram.SecondProgram -->
+      </class> <!-- selaniumsecondprogram.DemoBlaze -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
